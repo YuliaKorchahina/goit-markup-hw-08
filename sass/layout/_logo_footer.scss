@@ -1,0 +1,22 @@
+.footer__logo {
+  span {
+    @include font(26px, 700, 31px);
+    font-family: 'Raleway';
+    color: var(--white);
+    transition: color var(--transition-time) var(--transition-timing-function);
+  }
+  &.link {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__logo > span:hover,
+.footer__logo > span:focus {
+  color: var(--accent-color);
+}

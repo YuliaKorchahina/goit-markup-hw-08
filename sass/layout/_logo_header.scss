@@ -1,0 +1,11 @@
+.logo-header {
+  @include font(26px, 700, 31px);
+  margin: 24px 93px 25px auto;
+  font-family: 'Raleway';
+  color: var(--accent-color);
+  span {
+    @include font(26px, 700, 31px);
+    font-family: 'Raleway';
+    color: var(--maine);
+  }
+}

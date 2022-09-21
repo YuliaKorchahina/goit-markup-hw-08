@@ -1,0 +1,103 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--background-color-dark);
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer > .container .footer__logo {
+  @include font(26px, 700, 31px);
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-color);
+  transition: color var(--transition-time) var(--transition-timing-function);
+}
+
+.footer__left {
+  margin-right: 70px;
+}
+
+.footer__form-wrapper {
+  margin-left: auto;
+}
+
+.adress_list {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white);
+}
+
+.address__location {
+  display: inline-block;
+  margin-bottom: 9px;
+  line-height: 24px;
+  color: var(--white);
+  transition: color var(--transition-time) var(--transition-timing-function);
+}
+
+.address__contact {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-time) var(--transition-timing-function);
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address :hover,
+.address :focus {
+  color: var(--accent-color);
+}
+
+.footer__title {
+  @include font(14px, 700, 16px);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.socialmedia-list__item.footer-page {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socialmedia-list__footer-icon {
+  fill: var(--white);
+  transition: background-color var(--transition-time) var(--transition-timing-function);
+}
+
+.socialmedia-list__item.footer-page:hover,
+.socialmedia-list__item.footer-page:focus {
+  background-color: var(--accent-color);
+}
+
+.footer__right > .socialmedia-list {
+  margin-bottom: 0;
+}
+
+.footer__input {
+  display: block;
+  width: 358px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.footer__form > .button {
+  padding-right: 62px;
+}
+
+.footer__form {
+  position: relative;
+  display: flex;
+}
+
+.footer__icon-send {
+  position: absolute;
+  bottom: 13px;
+  right: 28px;
+}

@@ -1,0 +1,16 @@
+.button {
+  font-family: var(--primery-font-family);
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  letter-spacing: 0.06em;
+  @include font(16px, 700, 30px);
+  transition: background-color var(--transition-time) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-btn-color);
+  }
+}

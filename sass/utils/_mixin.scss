@@ -1,0 +1,11 @@
+@mixin font($fs: 14px, $fw: 400, $lh: 1.33) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh / $fs;
+}
+@mixin margin-auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
