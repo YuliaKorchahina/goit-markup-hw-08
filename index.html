@@ -12,46 +12,84 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container">
-            <nav class="header-nav">
+        <div class="container header_container">
+            <nav class="navigation">
                 <a class="logo-header link" href="./index.html">Web<span>Studio</span></a>
-                <ul class="header-links list">
-                    <li class="header-nav-item"><a class="header-nav link current" href="./index.html">Студія</a></li>
-                    <li class="header-nav-item"><a class="header-nav link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="header-nav-item"><a class="header-nav link" href="#">Контакти</a></li>
+                <ul class="navigation-links list">
+                    <li class="navigation-item"><a class="navigation link current" href="./index.html">Студія</a></li>
+                    <li class="navigation-item"><a class="navigation link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="navigation-item"><a class="navigation link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-            <ul class="header-contacts list">
-                <li class="header-contacts item">
+            <button type="button" class="open-mobile-menu-btn" data-menu-open>
+                <svg class="open-mobile-menu-btn__icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <ul class="contacts-menu list">
+                <li class="contacts-menu item">
                     <a class="nav-contact link" href="tel:+380961111111"><svg lang="en" aria-label="icon envelope"
                             class="nav-icon" width="16" height="15">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>+38 096 111 11 11 </a>
                 </li>
-                <li class="header-contacts item"><a class="nav-contact link" href="mailto:info@devstudio.com"><svg
+                <li class="contacts-menu item"><a class="nav-contact link" href="mailto:info@devstudio.com"><svg
                             lang="en" aria-label="icon smartphone" class="nav-icon" width="16" height="15">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>info@devstudio.com</a></li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container container">
+                <button type="button" class="mobile-modal__close-btn" data-menu-close>
+                    <svg class="mobile-modal__icon-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-navigation__list list">
+                    <li class="mobile-navigation__item"><a class="mobile-navigation__link link current"
+                            href="./index.html">Студія</a></li>
+                    <li class="mobile-navigation__item"><a class="mobile-navigation__link link"
+                            href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="mobile-navigation__item"><a class="mobile-navigation__link link" href="#">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts__menu list">
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11 </a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a class="mobile-contacts__link nav-contact link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="social-media list">
+                    <li class="social-media__item"><a class="social-media__link link" href="">Instagram</a></li>
+                    <li class="social-media__item"><a class="social-media__link link" href="">Twitter</a></li>
+                    <li class="social-media__item"><a class="social-media__link link" href="">Facebook</a></li>
+                    <li class="social-media__item"><a class="social-media__link link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <main class="">
+    <main>
         <!-- герой -->
-        <section class="hero section">
+        <!-- <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button class="button" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
         <!-- переваги -->
-        <section class="features section">
+        <!-- <section class="features section">
             <div class="features container">
                 <h2 class="visually-hidden">Переваги</h2>
                 <ul class="features-list list">
@@ -96,9 +134,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Чим ми займаємося -->
-        <section class="section">
+        <!-- <section class="section">
             <div class="examples container">
                 <h2 class="examples-title">Чим ми займаємося</h2>
                 <ul class="examples-list list">
@@ -122,9 +160,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- команда -->
-        <section class="team section">
+        <!-- <section class="team section">
             <div class="examples  container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list list">
@@ -284,8 +322,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="clients section">
+        </section> -->
+        <!-- <section class="clients section">
             <h2 class="clients-title">Постійні клієнти</h2>
             <div class="container">
                 <ul class="clients-list list">
@@ -333,10 +371,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- футер -->
-    <footer>
+    <!-- <footer>
         <div class="footer">
             <div class="container">
                 <div class="footer__left">
@@ -405,8 +443,8 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <div class=" backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class=" backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close><svg width="18" height="18">
                     <use href="./images/icons.svg#icon-close"></use>
@@ -457,8 +495,9 @@
                 <button type="submit" class="button form">Відправити</button>
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
