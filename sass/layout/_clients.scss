@@ -1,23 +1,22 @@
-.clients-title {
-  @include font(36px, 700, 42px);
+.clients__title {
+  @include font(28px, 700, 33px);
   text-align: center;
   margin-bottom: 50px;
   color: var(--maine);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
+  height: 92px;
   border: 1px solid var(--bgc);
   border-radius: 4px;
   background-color: var(--white);
@@ -29,12 +28,42 @@
   }
 }
 
-.clients-item-logo {
+.clients__logo {
   fill: var(--bgc);
   transition: fill var(--transition-time) var(--transition-timing-function);
 
-  .clients-item:hover &,
-  .clients-item:focus & {
+  .clients__item:hover &,
+  .clients__item:focus & {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__list.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .clients__item {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list.list {
+    display: flex;
+    column-gap: 30px;
+  }
+  .clients__item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+  .clients__title {
+    @include font(36px, 700, 42px);
   }
 }

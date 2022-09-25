@@ -604,48 +604,20 @@ screen
   border-radius: 0px 0px 4px 4px;
 }
 
-.socialmedia-list__icon {
-  fill: var(--bgc);
-  background-color: transparent;
-}
-.socialmedia-list__item:hover .socialmedia-list__icon, .socialmedia-list__item:focus .socialmedia-list__icon {
-  fill: var(--white);
-}
-
-.socialmedia-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 10px;
-  margin-bottom: 30px;
-}
-
-.socialmedia-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-  transition: background-color var(--transition-time) var(--transition-timing-function), fill var(--transition-time) var(--transition-timing-function);
-}
-.socialmedia-list__item:hover, .socialmedia-list__item:focus {
-  background-color: var(--accent-color);
-}
-
 @media screen and (min-width: 480px) {
   .team__title {
     font-size: 28px;
     font-weight: 700;
     line-height: 1.1785714286;
     margin-bottom: 30px;
-    color: var(--maine);
     text-align: center;
-    color: var(--maine);
   }
-  .team__img {
-    align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .team__list.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -689,45 +661,73 @@ screen
   background-color: var(--accent-color);
 }
 
-.clients-title {
-  font-size: 36px;
+.clients__title {
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.1666666667;
+  line-height: 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
   color: var(--maine);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
+  height: 92px;
   border: 1px solid var(--bgc);
   border-radius: 4px;
   background-color: var(--white);
   transition: border var(--transition-time) var(--transition-timing-function);
 }
-.clients-item:hover, .clients-item:focus {
+.clients__item:hover, .clients__item:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-item-logo {
+.clients__logo {
   fill: var(--bgc);
   transition: fill var(--transition-time) var(--transition-timing-function);
 }
-.clients-item:hover .clients-item-logo, .clients-item:focus .clients-item-logo {
+.clients__item:hover .clients__logo, .clients__item:focus .clients__logo {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .clients__list.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .clients__item {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list.list {
+    display: flex;
+    column-gap: 30px;
+  }
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
+  .clients__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+  }
+}
 .footer {
   padding: 60px 0;
   background-color: var(--background-color-dark);
