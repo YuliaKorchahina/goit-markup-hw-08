@@ -1,3 +1,8 @@
+@media screen and (max-width: 1199px) {
+  .examples {
+    display: none;
+  }
+}
 .examples-title {
   @include font(36px, 700, 42px);
   color: var(--maine);

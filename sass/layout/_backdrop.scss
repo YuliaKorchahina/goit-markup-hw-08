@@ -178,3 +178,17 @@
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (max-width: 769px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+
+  .modal-form-checkbox-field {
+    @include font(12px, 400, 14px);
+  }
+  .modal-terms {
+    @include font(12px, 400, 14px);
+  }
+}
