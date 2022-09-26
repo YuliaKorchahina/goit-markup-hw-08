@@ -1,6 +1,50 @@
 .header {
   border-bottom: 1px solid var(--header-border);
 }
+.current::after {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: ' ';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.navigation {
+  display: flex;
+  color: var(--maine);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-time) var(--transition-timing-function);
+}
+.contacts-menu {
+  margin-left: auto;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  transition: color var(--transition-time) var(--transition-timing-function);
+
+  &.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.nav-contact {
+  color: var(--text);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .header_container {
@@ -38,14 +82,6 @@
     display: flex;
     align-items: center;
   }
-  .navigation {
-    display: flex;
-    color: var(--maine);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color var(--transition-time) var(--transition-timing-function);
-  }
 
   .navigation__list {
     &.list {
@@ -56,42 +92,6 @@
 
   .navigation__item {
     position: relative;
-  }
-
-  .current::after {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    content: ' ';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
-
-  .contacts-menu {
-    margin-left: auto;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    transition: color var(--transition-time) var(--transition-timing-function);
-
-    &.link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-  }
-
-  .nav-contact {
-    color: var(--text);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
 
   .navigation {
@@ -107,6 +107,9 @@
     }
   }
 
+  .contacts-menu__item:first-child {
+    margin-bottom: 10px;
+  }
   .nav-icon {
     margin-right: 10px;
     fill: var(--text);
@@ -128,7 +131,12 @@
       display: flex;
       margin-left: auto;
       column-gap: 50px;
-      align-items: center;
+    }
+  }
+  .nav-contact {
+    &.link {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 }
