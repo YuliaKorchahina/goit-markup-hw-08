@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clients__item {
@@ -38,22 +39,13 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients__list.list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+@media screen and (max-width: 767px) {
   .clients__item {
-    width: 210px;
+    width: calc((100% / 2 - 30px));
   }
 }
 
 @media screen and (min-width: 768px) {
-  .clients__list.list {
-    display: flex;
-    column-gap: 30px;
-  }
   .clients__item {
     width: 226px;
   }
