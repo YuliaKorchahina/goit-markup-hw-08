@@ -93,10 +93,34 @@
                 </ul>
                 <h2 class="visually-hidden">Проекти</h2>
                 <ul class="projects__list list">
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/site.jpg" alt="зображення веб-сайта" width="370">
+                                <picture>
+                                    <!-- desktop img -->
+                                    <source
+                                        srcset="./images/adaptive/pf1-desktop.webp 1x, ./images/adaptive/pf1-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf1-desctop.jpg 1x, ./images/adaptive/pf1-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf1-tablet.webp 1x, ./images/adaptive/pf1-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf1-tablet.jpg 1x, ./images/adaptive/pf1-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf1-mobile.webp 1x, ./images/adaptive/pf1-mobile@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf1-mobile.jpg 1x, ./images/adaptive/pf1-mobile@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <img src="./images/adaptive/pf1-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/site.jpg" alt="зображення веб-сайта" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -107,10 +131,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/poster.jpg" alt="постер" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf2-desktop.webp 1x, ./images/adaptive/pf2-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf2-desctop.jpg 1x, ./images/adaptive/pf2-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf2-tablet.webp 1x, ./images/adaptive/pf2-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf2-tablet.jpg 1x, ./images/adaptive/pf2-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf2-mobile.webp 1x, ./images/adaptive/pf2-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf2-mobile.jpg 1x, ./images/adaptive/pf2-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf2-mobile.jpg" alt="porffolio-img">
+                                    <!-- <img src="./images/poster.jpg" alt="постер" width="370"> -->
+                                </picture>
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -121,10 +168,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/restaurant.jpg" alt="банер ресторана" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf3-desktop.webp 1x, ./images/adaptive/pf3-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf3-desctop.jpg 1x, ./images/adaptive/pf3-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf3-tablet.webp 1x, ./images/adaptive/pf3-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf3-tablet.jpg 1x, ./images/adaptive/pf3-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf3-mobile.webp 1x, ./images/adaptive/pf3-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf3-mobile.jpg 1x, ./images/adaptive/pf3-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf3-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/restaurant.jpg" alt="банер ресторана" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -135,10 +205,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/prime.jpg" alt="наушники" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf4-desktop.webp 1x, ./images/adaptive/pf4-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf4-desctop.jpg 1x, ./images/adaptive/pf4-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf4-tablet.webp 1x, ./images/adaptive/pf4-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf4-tablet.jpg 1x, ./images/adaptive/pf4-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf4-mobile.webp 1x, ./images/adaptive/pf4-mobile@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf4-mobile.jpg 1x, ./images/adaptive/pf4-mobile@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <img src="./images/adaptive/pf4-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/prime.jpg" alt="наушники" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -149,10 +242,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/boxes.jpg" alt="коробки" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf5-desktop.webp 1x, ./images/adaptive/pf5-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf5-desctop.jpg 1x, ./images/adaptive/pf5-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf5-tablet.webp 1x, ./images/adaptive/pf5-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf5-tablet.jpg 1x, ./images/adaptive/pf5-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf5-mobile.webp 1x, ./images/adaptive/pf5-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf5-mobile.jpg 1x, ./images/adaptive/pf5-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf5-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/boxes.jpg" alt="коробки" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -163,10 +279,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/screen.jpg" alt="монитор" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf6-desktop.webp 1x, ./images/adaptive/pf6-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf6-desctop.jpg 1x, ./images/adaptive/pf6-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf6-tablet.webp 1x, ./images/adaptive/pf6-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf6-tablet.jpg 1x, ./images/adaptive/pf6-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf6-mobile.webp 1x, ./images/adaptive/pf6-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf6-mobile.jpg 1x, ./images/adaptive/pf6-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf6-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/screen.jpg" alt="монитор" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -177,10 +316,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/book.jpg" alt="книга" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf7-desktop.webp 1x, ./images/adaptive/pf7-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf7-desctop.jpg 1x, ./images/adaptive/pf7-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf7-tablet.webp 1x, ./images/adaptive/pf7-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf7-tablet.jpg 1x, ./images/adaptive/pf7-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf7-mobile.webp 1x, ./images/adaptive/pf7-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf7-mobile.jpg 1x, ./images/adaptive/p72-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf7-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/book.jpg" alt="книга" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -191,10 +353,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/label.jpg" alt="этикетка" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf8-desktop.webp 1x, ./images/adaptive/pf8-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf8-desctop.jpg 1x, ./images/adaptive/pf8-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf8-tablet.webp 1x, ./images/adaptive/pf8-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf8-tablet.jpg 1x, ./images/adaptive/pf8-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf8-mobile.webp 1x, ./images/adaptive/pf8-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf8-mobile.jpg 1x, ./images/adaptive/pf8-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf8-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/label.jpg" alt="этикетка" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -205,10 +390,33 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="projects__item">
                         <a href="" class="projects__link link">
                             <div class="projects__wrapper">
-                                <img src="./images/notebook.jpg" alt="ноутбук" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/adaptive/pf9-desktop.webp 1x, ./images/adaptive/pf9-desktop@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf9-desctop.jpg 1x, ./images/adaptive/pf9-desctop@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <!-- tablet img -->
+                                    <source
+                                        srcset="./images/adaptive/pf9-tablet.webp 1x, ./images/adaptive/pf9-tablet@2x.webp 2x"
+                                        media="(min-width: 768px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf9-tablet.jpg 1x, ./images/adaptive/pf9-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <!-- mobile -->
+                                    <source
+                                        srcset="./images/adaptive/pf9-mobile.webp 1x, ./images/adaptive/pf9-mobile@2x.webp 2x"
+                                        media="(min-width: 480px)" type="image/webp" />
+                                    <source
+                                        srcset="./images/adaptive/pf9-mobile.jpg 1x, ./images/adaptive/pf9-mobile@2x.jpg 2x"
+                                        media="(min-width: 480px)" />
+                                    <img src="./images/adaptive/pf9-mobile.jpg" alt="porffolio-img">
+                                </picture>
+                                <!-- <img src="./images/notebook.jpg" alt="ноутбук" width="370"> -->
                                 <p class="projects__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем
                                     функціоналу та це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                     приватну особу. </p>
@@ -245,7 +453,7 @@
                     <ul class="socialmedia-list list">
                         <li class="socialmedia-list__item footer-page">
                             <a class="socialmedia__link link">
-                                <svg lang="en" aria-level="icon instagram" class="socialmedia-list__footer-icon"
+                                <svg lang="en" aria-label="icon instagram" class="socialmedia-list__footer-icon"
                                     width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
@@ -253,7 +461,7 @@
                         </li>
                         <li class="socialmedia-list__item footer-page">
                             <a class="socialmedia__link link">
-                                <svg lang="en" aria-level="icon twitter" class="socialmedia-list__footer-icon"
+                                <svg lang="en" aria-label="icon twitter" class="socialmedia-list__footer-icon"
                                     width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
@@ -261,7 +469,7 @@
                         </li>
                         <li class="socialmedia-list__item footer-page">
                             <a class="socialmedia__link link">
-                                <svg lang="en" aria-level="icon facebook" class="socialmedia-list__footer-icon"
+                                <svg lang="en" aria-label="icon facebook" class="socialmedia-list__footer-icon"
                                     width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
@@ -269,7 +477,7 @@
                         </li>
                         <li class="socialmedia-list__item footer-page">
                             <a class="socialmedia__link link">
-                                <svg lang="en" aria-level="icon linkedin" class="socialmedia-list__footer-icon"
+                                <svg lang="en" aria-label="icon linkedin" class="socialmedia-list__footer-icon"
                                     width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -280,7 +488,7 @@
                 <div class="footer__form-wrapper">
                     <p class="footer__title">Підпишіться на розсилку</p>
                     <form class="footer__form">
-                        <label name="user_email">
+                        <label class="user_email">
                             <input type="email" placeholder="E-mail" class="footer__input">
                         </label>
                         <button type="submit" class="button">Підписатися <svg class="footer__icon-send" width="24"

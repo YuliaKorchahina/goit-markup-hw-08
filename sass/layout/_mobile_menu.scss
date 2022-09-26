@@ -107,7 +107,9 @@
       color: var(--accent-color);
     }
   }
-
+  .mobile-contacts__link.tel {
+    color: var(--accent-color);
+  }
   .mobile-contacts__item:not(:last-child) {
     padding-bottom: 32px;
   }
