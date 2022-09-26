@@ -220,11 +220,11 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .contacts-menu:hover, .contacts-menu:focus {
-    color: var(--accent-color);
-  }
   .nav-contact {
     color: var(--text);
+  }
+  .nav-contact:hover, .nav-contact:focus {
+    color: var(--accent-color);
   }
   .navigation.link {
     display: block;
@@ -251,6 +251,7 @@ a {
     display: flex;
     margin-left: auto;
     column-gap: 50px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {

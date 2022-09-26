@@ -84,15 +84,14 @@
       padding-top: 32px;
       padding-bottom: 32px;
     }
-
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
 
   .nav-contact {
     color: var(--text);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .navigation {
@@ -129,6 +128,7 @@
       display: flex;
       margin-left: auto;
       column-gap: 50px;
+      align-items: center;
     }
   }
 }
