@@ -10,9 +10,9 @@
 }
 
 .footer__input {
+  max-width: 450px;
   display: block;
   @include margin-auto;
-  width: 450px;
   margin-bottom: 20px;
   padding-top: 15px;
   padding-left: 16px;
@@ -97,7 +97,11 @@
 .footer__right > .socialmedia-list {
   margin-bottom: 0;
 }
-
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     .container {
@@ -106,6 +110,9 @@
       align-items: baseline;
       flex-wrap: wrap;
     }
+  }
+  .footer__input {
+    width: 450px;
   }
 }
 
