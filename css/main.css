@@ -286,8 +286,13 @@ a {
     display: none;
   }
   .mobile-menu__container {
-    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: relative;
   }
   .mobile-menu.is-open {
     padding-bottom: 48px;
@@ -338,8 +343,7 @@ a {
     height: 40px;
   }
   .mobile-navigation__list {
-    padding-top: 48px;
-    margin-bottom: 302px;
+    flex-grow: 1;
   }
   .mobile-navigation__link {
     font-size: 40px;
@@ -600,6 +604,9 @@ screen
 
 .team {
   background-color: var(--background-secondary-color);
+}
+.team .socialmedia-list {
+  padding-bottom: 30px;
 }
 
 .team__title {
