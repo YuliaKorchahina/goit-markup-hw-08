@@ -60,10 +60,16 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   width: 100%;
   padding-left: 15px;
@@ -139,9 +145,11 @@ a {
   color: var(--maine);
 }
 
-@media screen and (min-width: 468px) {
+@media screen and (max-width: 767px) {
   .logo-header {
     margin-right: 87px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .header {
@@ -155,6 +163,9 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color var(--transition-time) var(--transition-timing-function);
+}
+.navigation.current {
+  color: var(--accent-color);
 }
 
 .contacts-menu {
@@ -185,10 +196,11 @@ a {
     margin-left: auto;
     column-gap: 50px;
   }
-  .contacts-menu__item:first-child {
-    margin-bottom: 10px;
-  }
 }
+.contacts-menu__item:first-child {
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -251,11 +263,11 @@ a {
   .nav-contact:hover .nav-icon, .nav-contact:focus .nav-icon {
     fill: var(--accent-color);
   }
-  .navigation.current {
-    color: var(--accent-color);
-  }
 }
 @media screen and (min-width: 1200px) {
+  .contacts-menu__item:first-child {
+    margin-bottom: 0;
+  }
   .contacts-menu.list {
     display: flex;
     margin-left: auto;
@@ -325,6 +337,10 @@ a {
     width: 40px;
     height: 40px;
   }
+  .mobile-navigation__list {
+    padding-top: 48px;
+    margin-bottom: 302px;
+  }
   .mobile-navigation__link {
     font-size: 40px;
     font-weight: 500;
@@ -392,7 +408,7 @@ a {
   font-size: 26px;
   font-weight: 900;
   line-height: 1.6153846154;
-  max-width: 360px;
+  max-width: 696px;
 }
 
 .hero {
@@ -467,7 +483,7 @@ screen
   padding-bottom: 0;
 }
 
-.features-title {
+.features__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
@@ -486,12 +502,12 @@ screen
   background-color: var(--background-secondary-color);
 }
 
-.features-text {
+.features__text {
   line-height: 1.7;
   color: var(--text);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .icon-wrapper {
     display: flex;
     align-items: center;
@@ -499,13 +515,16 @@ screen
     width: 270px;
     width: 100%;
   }
-  .features-text {
+  .features__text {
     width: 100%;
     margin-bottom: 30px;
   }
+  .features__title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
-  .features-list {
+  .features__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -514,16 +533,19 @@ screen
   .icon-wrapper {
     width: 354px;
   }
-  .features-text {
+  .features__text {
     width: 354px;
+  }
+  .features.container {
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .features-list {
+  .features__list {
     display: flex;
     gap: 30px;
   }
-  .features-text {
+  .features__text {
     line-height: 1.7;
     width: 270px;
     color: var(--text);
@@ -617,7 +639,7 @@ screen
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__title {
     font-size: 28px;
     font-weight: 700;
@@ -768,9 +790,9 @@ screen
   line-height: 1.1428571429;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--white);
   margin-top: 60px;
   text-align: center;
+  color: var(--white);
 }
 
 .address__item {
@@ -857,6 +879,9 @@ screen
   .footer__input {
     width: 450px;
   }
+  .footer__title.join {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer .container {
@@ -902,6 +927,9 @@ screen
   .footer__icon-send {
     position: absolute;
     right: 28px;
+  }
+  .footer__title {
+    margin-top: 0;
   }
 }
 .footer__logo span {
@@ -1209,7 +1237,7 @@ screen
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .projects__list {
     display: flex;
@@ -1226,7 +1254,7 @@ screen
     flex-grow: 1;
   }
   .projects__item {
-    width: calc(50% - 30px);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1240,6 +1268,6 @@ screen
     margin-bottom: 50px;
   }
   .projects__item {
-    width: calc(33.3333333333% - 60px);
+    width: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */

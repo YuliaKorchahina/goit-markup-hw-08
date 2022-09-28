@@ -26,9 +26,9 @@
   @include font(14px, 700, 16px);
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--white);
   margin-top: 60px;
   text-align: center;
+  color: var(--white);
 }
 .address__item {
   margin-bottom: 8px;
@@ -114,6 +114,10 @@
   .footer__input {
     width: 450px;
   }
+
+  .footer__title.join {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -168,5 +172,8 @@
   .footer__icon-send {
     position: absolute;
     right: 28px;
+  }
+  .footer__title {
+    margin-top: 0;
   }
 }

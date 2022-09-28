@@ -93,7 +93,7 @@
     display: flex;
     justify-content: center;
     column-gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .projects__list {
     display: flex;
@@ -111,7 +111,7 @@
     flex-grow: 1;
   }
   .projects__item {
-    width: calc((100% / 2 - 30px));
+    width: calc((100% - 30px) / 2);
   }
 }
 
@@ -126,6 +126,6 @@
     margin-bottom: 50px;
   }
   .projects__item {
-    width: calc((100% / 3 - 60px));
+    width: calc((100% - 60px) / 3);
   }
 }

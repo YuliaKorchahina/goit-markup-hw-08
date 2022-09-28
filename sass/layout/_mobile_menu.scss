@@ -66,10 +66,10 @@
     width: 40px;
     height: 40px;
   }
-  // .mobile-navigation__list {
-  //   padding-top: 48px;
-  //   margin-bottom: 302px;
-  // }
+  .mobile-navigation__list {
+    padding-top: 48px;
+    margin-bottom: 302px;
+  }
   .mobile-navigation__link {
     @include font(40px, 500, 47px);
     letter-spacing: 0.02em;

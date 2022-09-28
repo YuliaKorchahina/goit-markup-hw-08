@@ -9,8 +9,10 @@
     color: var(--maine);
   }
 }
-@media screen and (min-width: 468px) {
+@media screen and (max-width: 767px) {
   .logo-header {
     margin-right: 87px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }

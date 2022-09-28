@@ -37,7 +37,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__title {
     @include font(28px, 700, 33px);
     margin-bottom: 30px;
