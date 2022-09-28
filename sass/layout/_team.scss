@@ -1,8 +1,5 @@
 .team {
   background-color: var(--background-secondary-color);
-  .socialmedia-list {
-    padding-bottom: 30px;
-  }
 }
 
 .team__title {
@@ -41,6 +38,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .team .socialmedia-list {
+    padding-bottom: 30px;
+  }
   .team__title {
     @include font(28px, 700, 33px);
     margin-bottom: 30px;

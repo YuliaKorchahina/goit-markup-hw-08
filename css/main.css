@@ -605,9 +605,6 @@ screen
 .team {
   background-color: var(--background-secondary-color);
 }
-.team .socialmedia-list {
-  padding-bottom: 30px;
-}
 
 .team__title {
   font-size: 36px;
@@ -647,6 +644,9 @@ screen
 }
 
 @media screen and (max-width: 767px) {
+  .team .socialmedia-list {
+    padding-bottom: 30px;
+  }
   .team__title {
     font-size: 28px;
     font-weight: 700;
