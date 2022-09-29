@@ -364,6 +364,7 @@ a {
   }
   .mobile-contacts__menu {
     margin-bottom: 64px;
+    word-break: break-all;
   }
   .mobile-contacts__link {
     font-size: 30px;
@@ -1170,6 +1171,7 @@ screen
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5555555556;
+  top: 1px;
   position: absolute;
   text-align: left;
   overflow: auto;
@@ -1227,14 +1229,19 @@ screen
   padding: 20px 24px;
 }
 
+@media screen and (max-width: 479px) {
+  .projects__overlay {
+    padding: 15px 24px;
+  }
+}
 @media screen and (max-width: 767px) {
   .projects__buttons-filter.list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    row-gap: 15px;
     margin-bottom: 40px;
-    justify-content: start;
-    max-width: 326px;
+    justify-content: flex-start;
   }
   .projects__link {
     margin-bottom: 30px;
