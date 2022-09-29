@@ -82,7 +82,8 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 40px;
-    width: 326px;
+    justify-content: start;
+    max-width: 326px;
   }
   .projects__link {
     margin-bottom: 30px;
@@ -96,6 +97,7 @@
     margin-bottom: 30px;
   }
   .projects__list {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;

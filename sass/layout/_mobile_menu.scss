@@ -57,7 +57,7 @@
   }
 
   .mobile-modal__icon-close {
-    width: 30px;
+    max-width: 30px;
     height: 30px;
   }
 
@@ -68,7 +68,7 @@
     line-height: 0;
   }
   .open-mobile-menu-btn__icon {
-    width: 40px;
+    max-width: 40px;
     height: 40px;
   }
   .mobile-navigation__list {
